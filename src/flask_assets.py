@@ -234,7 +234,7 @@ class FlaskResolver(Resolver):
             try:
                 from flask.ext.s3 import url_for
             except ImportError as e:
-                print "You must have Flask S3 to use FLASK_ASSETS_USE_S3 option"
+                print("You must have Flask S3 to use FLASK_ASSETS_USE_S3 option")
                 raise e
         else:
             from flask import url_for
